@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#ck").click(function(){
+var text = $("#txt").val();
+if(text == "yes" || text == "Yes")
+{$("#ys").removeAttr("hidden");} else if(text == ""){ $("#ys").attr('hidden',true); } else { alert("This is not an answer hm");} 
+});
+});
+</script>
+</head>
+<body bgcolor="#9999ff">
+<title>My Site</title>
+
+<center><h1 style="margin-top:40px;font-size:50px"><font color="purple">Jedidiah and Kiril &hearts;</font></h1></center>
+
+<h2 style="font-size:40px;"><marquee behavior="alternate">Will you marry me ?</marquee></h2>
+
+<center><img src="img3.jpg" width="250" height="250"/>  <img src="img4.jpeg" width="250" height="250"/></center>
+
+<center><div style="margin-top: 20px">Answer: <input type="text" id="txt"/></div><br><input type="submit" value="Click me" id="ck"/></center>
+<p id="ys" hidden style="font-size:20px;color:red;text-align:center;font-weight:bold">I am very happy:)</p>
+
+
+</body>
+</html>
